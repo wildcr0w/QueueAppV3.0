@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "316313207698",
+    "firebase_url": "https://qapp-befbe.firebaseio.com",
+    "project_id": "qapp-befbe",
+    "storage_bucket": "qapp-befbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316313207698:android:5e3b973cea9825ed",
+        "android_client_info": {
+          "package_name": "com.yashodainfotech.queuingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316313207698-bi1asnekd7jdkrglern580m51md9mp0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAStqse7mjOACEPBKa_0kWgH9B2lA7ShDk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

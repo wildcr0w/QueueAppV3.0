@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/table_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:hint="Select Table"
+                android:drawableRight="@drawable/ic_dropdown"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/table_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:hint="Enter Table Time"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/newadmin"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/table_id_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:hint="Select Table Id"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/table_time1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:singleLine="true"
+        android:hint="Enter Table Time"/>
+</RelativeLayout>

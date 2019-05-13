@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tooladdnews"
+        style="@style/MyActionBarr"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#434343"
+        app:titleTextColor="#ffffff"></android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_below="@id/tooladdnews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/buttonScan">
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+   <!-- <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:background="@color/main_color_red"
+        android:foreground="?attr/selectableItemBackground"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/menu" />-->
+    <Button
+        android:visibility="gone"
+        android:background="@color/main_color_red"
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="Reserve a Table"
+        android:textAllCaps="false" />
+</RelativeLayout>

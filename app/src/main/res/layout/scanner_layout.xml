@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:text="Cancel"
+        android:id="@+id/cancel_btn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:text="Back Camera"
+        android:layout_alignParentRight="true"
+        android:id="@+id/back_camera"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+       android:layout_toRightOf="@id/cancel_btn"
+        android:text="Front Camera"
+        android:id="@+id/front_camera"/>
+
+    <RelativeLayout
+        android:id="@+id/linear1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgTapTag"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"/>
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+    </RelativeLayout>
+</RelativeLayout>
