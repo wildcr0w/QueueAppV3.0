@@ -245,7 +245,8 @@ static String seat="";
             }
         });
         dashboardAdapter = new DashboardAdapter(DashboardActivity.this, dashPOJOS, dashboardAdapter);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), calculateNumberOfColumns(2));
+        // GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), calculateNumberOfColumns(2));
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
         recycle_dashboard.setLayoutManager(gridLayoutManager);
         manager = new LinearLayoutManager(context);
         recycle_dashboard.addOnScrollListener(new RecyclerView.OnScrollListener() {
