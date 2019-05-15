@@ -40,16 +40,6 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/Time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="HH:MM:SS"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,6 +53,16 @@
                     android:layout_marginTop="0dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/timer" />
+
+                <TextView
+	                android:id="@+id/Time"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:text="HH:MM:SS"
+	                android:textAlignment="center"
+	                android:textColor="@color/black"
+	                android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/Timenew"
